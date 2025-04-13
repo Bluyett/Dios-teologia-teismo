@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-repeat: no-repeat;
+				background-position: center;
+				color: white;
+			}
+      header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+      #title, p, .option, #caption, #content, footer {
+        font-family: 'Poppins', sans-serif;
+      }
+      tr, td{
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        padding: 15px 7px 15px 7px;
+      }
+      #title {
+        display: inline-block;
+      }
+      #main_title {
+        padding-left: 30px;
+        display: inline;
+        font-size: 27px;
+      }
+      #guider_title {
+        display: inline;
+				font-size: 17px;
+      }
+      p {
+        font-size: 20px;
+      }
+      nav {
+        margin-right: 30px;
+      }
+			.options_list {
+					list-style: none;
+					display: flex;
+					flex-direction: row-reverse;
+			}
+			.option {
+				margin-right: 30px;
+				align-items: center;
+			}
+			.ancla {
+					color: white;
+					text-decoration: none;
+					font-size: 17px;
+			}
+      #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        object-fit: cover;
+      }
+      #opacity{
+        background-color: rgba(0, 0, 0, 0.439);
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      #caption {
+        color: rgba(255, 255, 255);
+        margin-left: 30px;
+        margin-top: 130px;
+        margin-bottom: 80px;
+      }
+      #text_caption{
+        margin-right: 250px;
+      }
+      #credits{
+        width:100%;
+      }
+      footer {
+        background-color: rgb(37, 34, 34);
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+      }
+      .last_link {
+        text-decoration: none;
+        color: white;
+        font-size: 18;
+      }
+      .animate-rise {
+        animation: rise 3s forwards;
+      }
+      .animate-appear {
+        animation: appear 3s forwards;
+      }
+      @keyframes rise {
+        0% {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+	</style>
+</head>
+<body>
+  <header class="animate-appear">
+    <div id="title">
+      <h1 id="main_title">
+      <a href="index.html" style="text-decoration: none; color: white">Dios, Teología y Teísmo | </a></h1>
+      <h3 id="guider_title">Créditos</h3>
+    </div>
+    <nav>
+      <nav>
+        <ul class="options_list">
+          <li class="option" style="font-size: 17;"><b>Teorías</b></li>
+          <li class="option"><b>|</b></li>
+          <li class="option"><a href="HTMLs/Theories/antrophic_base.html" class="ancla"><b>Principio Antrópico</b></a></li>
+          <li class="option"><a href="HTMLs/Theories/contingence.html" class="ancla"><b>Contingencia</b></a></li>
+          <li class="option"><a href="HTMLs/Theories/first_inmovil_motor.html" class="ancla"><b>Primer Motor Inmóvil</b></a></li>
+          <li class="option"><a href="HTMLs/Theories/smart_design.html" class="ancla"><b>Diseño Inteligente</b></a></li>
+        </ul>
+        <ul class="options_list">
+          <li class="option" style="font-size: 17;"><b>Argumentos</b></li>
+          <li class="option"><b>|</b></li>
+          <li class="option"><a href="HTMLs/Arguments/Cosmologic.html" class="ancla"><b>Cosmológico</b></a></li>
+          <li class="option"><a href="HTMLs/Arguments/pascal.html" class="ancla"><b>Apuesta de Pascal</b></a></li>
+          <li class="option"><a href="HTMLs/Arguments/moral.html" class="ancla"><b>Moral</b></a></li>
+          <li class="option"><a href="HTMLs/Arguments/ontologic.html" class="ancla"><b>Ontológico</b></a></li>
+          <li class="option"><a href="HTMLs/Arguments/teleologic.html" class="ancla"><b>Teleológico</b></a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <img src="./images/Principal/Nativity Wonder Hope - 16x9.jpg" id="background">
+
+  <div id="opacity">
+
+  </div>
+  <div class="animate-rise" id="caption">
+    <b>
+    <table >
+      <tr>
+        <td width="30%" id="td">
+          <p style="font-size: 70px; margin-left: 70px;" id="text_caption">Créditos</p>
+        </td>
+        <td width="70%" id="td">
+          <table id="credits">
+            <tr>
+              <p style="margin-left: 100px; font-size: 35px;">Instituto Dr. Genaro Muñoz Hernández</p>
+            </tr>
+            <tr>
+              <td class="date" align="right">Tema elegido: </td>
+              <td>Dios, Teología y Teísmo</td>
+            </tr>
+            <tr>
+              <td class="date" align="right">Asignatura: </td>
+              <td>Desarrollo Web</td>
+            </tr>
+            <tr>
+              <td class="date" align="right">Maestra: </td>
+              <td>Yeny Yoseth Orellana Donaire</td>
+            </tr>
+            <tr>
+              <td class="date" align="right">Alumno: </td>
+              <td>Juan Pablo Castellanos Castro</td>
+            </tr>
+            <tr>
+              <td class="date" align="right">Curso y Sección: </td>
+              <td>12vo en Informática "2"</td>
+            </tr>
+            <tr>
+              <td class="date" align="right">Modalidad: </td>
+              <td>Bachillerato Técnico Profesional</td>
+            </tr>
+            <tr>
+              <td class="date" align="right">Fecha: </td>
+              <td>19 de marzo del 2025</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </b>
+  </div>
+  <footer>
+    <center>
+      <b>
+      <p>Trabajo presentado por: Juan Castellanos</p>
+      <p>12vo BTP en Informática 2</p>
+      <a href="credits.html" class="last_link">Créditos</a>
+    <p style="display: inline;"> | </p>
+    <a href="bibliography.html" class="last_link">Bibliografía</a>
+      </b>
+    </center>
+  </footer>
+
+</body>
+</html>

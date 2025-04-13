@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Diseño Inteligente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-repeat: no-repeat;
+				background-position: center;
+				color: white;
+			}
+      header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          position: fixed;
+          top: 0;
+          background-color: rgba(0, 0, 0, 0.8);
+          z-index: 1000;
+        }
+      #title, p, .option, #caption, #content, footer {
+        font-family: 'Poppins', sans-serif;
+      }
+      #title {
+        display: inline-block;
+      }
+      #main_title {
+        padding-left: 30px;
+        display: inline;
+        font-size: 27px;
+      }
+      #guider_title {
+        display: inline;
+				font-size: 17px;
+      }
+      p {
+        font-size: 18px;
+      }
+      nav {
+        margin-right: 30px;
+      }
+			.options_list {
+					list-style: none;
+					display: flex;
+					flex-direction: row-reverse;
+			}
+			.option {
+				margin-right: 30px;
+				align-items: center;
+			}
+			.ancla {
+					color: white;
+					text-decoration: none;
+					font-size: 17px;
+			}
+      #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+      }
+      #caption {
+        display: block;
+        width: 50%;
+        color: rgba(255, 255, 255);
+        margin-left: 80px;
+        margin-top: 305px;
+        margin-bottom: 305px;
+      }
+      #content {
+        width: 100%;
+        color: black;
+        margin: 0 auto;
+        padding: 80px 40px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        box-shadow: 6px 6px 6px black;
+        box-sizing: border-box;
+        text-align: justify;
+      }
+      footer {
+        background-color: rgb(37, 34, 34);
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .last_link {
+        text-decoration: none;
+        color: white;
+        font-size: 18;
+      }
+      .animate-rise {
+        animation: rise 3s forwards;
+      }
+      .animate-appear {
+        animation: appear 3s forwards;
+      }
+      @keyframes rise {
+        0% {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+	  </style>
+  </head>
+  <body>
+    <header class="animate-appear">
+      <div id="title">
+        <h1 id="main_title">
+        <a href="../../index.html" style="text-decoration: none; color: white">Dios, Teología y Teísmo | </a></h1>
+        <h3 id="guider_title">Diseño Inteligente</h3>
+      </div>
+      <nav>
+        <ul class="options_list">
+          <li class="option" style="font-size: 17;"><b>Teorías</b></li>
+          <li class="option"><b>|</b></li>
+          <li class="option"><a href="antrophic_base.html" class="ancla"><b>Principio Antrópico</b></a></li>
+          <li class="option"><a href="contingence.html" class="ancla"><b>Contingencia</b></a></li>
+          <li class="option"><a href="first_inmovil_motor.html" class="ancla"><b>Primer Motor Inmóvil</b></a></li>
+          <li class="option"><a href="smart_design.html" class="ancla"><b>Diseño Inteligente</b></a></li>
+        </ul>
+        <ul class="options_list">
+          <li class="option" style="font-size: 17;"><b>Argumentos</b></li>
+          <li class="option"><b>|</b></li>
+          <li class="option"><a href="../Arguments/Cosmologic.html" class="ancla"><b>Cosmológico</b></a></li>
+          <li class="option"><a href="../Arguments/pascal.html" class="ancla"><b>Apuesta de Pascal</b></a></li>
+          <li class="option"><a href="../Arguments/moral.html" class="ancla"><b>Moral</b></a></li>
+          <li class="option"><a href="../Arguments/ontologic.html" class="ancla"><b>Ontológico</b></a></li>
+          <li class="option"><a href="../Arguments/teleologic.html" class="ancla"><b>Teleológico</b></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <img src="../../images/Theories/Nativity%20Wonder%20Joy%20-%2016x9.jpg" id="background">
+
+    <div class="animate-rise" id="caption">
+      <b><p style="font-size: 70px;">"Dios no juega a los dados."</p>
+      <p style="font-size: 40px;">- Albert Einstein</p></b>
+    </div>
+
+    <div class="animate-rise" id="content">
+      <h1>¿Qué es el Diseño Inteligente?</h1>
+      <p>El Diseño Inteligente (DI) es una teoría científica que emplea los métodos comúnmente utilizados por otras ciencias históricas para concluir que ciertas características del universo y de los seres vivos se explican mejor por una causa inteligente, no por un proceso no dirigido como la selección natural. Los teóricos del DI argumentan que el diseño puede inferirse estudiando las propiedades informativas de los objetos naturales para determinar si contienen el tipo de información que según nuestra experiencia surge de una causa inteligente. La forma de información que observamos es producida por acción inteligente, y por lo tanto indica de manera confiable indicios de diseño, generalmente se denomina «Complejidad Especificada» o «Información Compleja y Especificada» (ICE).</p>
+      <h1>Conflictos</h1>
+      <p>El creacionismo defiende la necesidad de ajustar los resultados científicos a lo que se dice en la Sagrada Escritura. El problema es que lo escrito en los textos sagrados se interpreta en sentido literal. Esto ha llevado a los creacionistas a defender algunas hipótesis que, como la que establece la edad de la Tierra, han sido rebatidas de manera contundente por la ciencia. El creacionismo, en sus múltiples variantes, ha fracasado repetidamente en el ámbito académico y científico. No obstante, en los Estados Unidos conserva numerosos seguidores hoy en día. <br><br>
+        El DI, por otra parte, se presenta a sí mismo como alternativa y nuevo paradigma estrictamente científico para la comprensión de los procesos propios de los seres vivos. Su aparición en los Estados Unidos ha estado también acompañada por una agria polémica. Los enfrentamientos han llegado a los tribunales, como ocurrió con el creacionismo cuando intentó estar presente en el sistema educativo de los Estados Unidos e incluso desplazar a las teorías evolutivas. En este caso, a diferencia de los creacionistas, el DI está perdiendo la partida desde el principio. El conflicto ha tenido eco en Europa, pero en medida mucho menor. <br><br>
+        El tono poco sosegado de los debates entre detractores y defensores del DI ha hecho difícil poder abordar los importantes temas de fondo que subyacen al enfrentamiento. Desde un bando consideran al Diseño Inteligente como una variante actual y sofisticada del creacionismo, que está al servicio de los mismos intereses: el DI sería religión vestida de ciencia. Esto lo niegan rotundamente sus defensores, que insisten en que no se salen del ámbito estrictamente científico, aunque no tienen problema en admitir que coinciden con el creacionismo en el objetivo de conseguir una ciencia que no sea materialista.</p>
+    </div>
+
+    <footer>
+      <center>
+        <b>
+        <p>Trabajo presentado por: Juan Castellanos</p>
+        <p>12vo BTP en Informática 2</p>
+        <a href="../../credits.html" class="last_link">Créditos</a>
+      <p style="display: inline;"> | </p>
+      <a href="../../bibliography.html" class="last_link">Bibliografía</a>
+        </b>
+      </center>
+    </footer>
+  </body>
+</html>
