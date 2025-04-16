@@ -1,0 +1,131 @@
+<div class="animate-rise" id="caption">
+  <b>
+    <p style="font-size: 100px; display: inline;">Bibliografía</p>
+    <p style="font-size: 25px;">- Iconos de Fuentes</p>
+    <p style="font-size: 25px;">- Descripción de Fuentes</p>
+  </b>
+</div>
+<div id="content" class="animate-rise">
+  <table id="bib_info" class="animate-rise" align="center" border="1px solid black">
+    <tr align="center">
+      <td width="15%">
+        <h1>Icono</h1>
+      </td>
+      <td width="30%">
+        <h1>Fuente</h1>
+      </td>
+      <td width="55%">
+        <h1>Descripción</h1>
+      </td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_proverbia.ico" alt="Icono de Proverbia" class="icon"></td>
+      <td class="info"><a href="https://proverbia.net/frases-de-existencia-de-dios" class="ancla">proverbia.net</a></td>
+      <td class="info">Esta es la web que ofrece la frase célebre de la Página Principal</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_eunsa.jpeg" alt="Icono de Eunsa" class="icon"></td>
+      <td class="info"><a href="https://www.eunsa.es/libro/introduccion-a-la-teologia_100778/" class="ancla">www.eunsa.es</a></td>
+      <td class="info">Web que da la introducción utilizada al Teísmo</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_wiki.ico" alt="Icono de Wikipedia" class="icon"></td>
+      <td class="info"><a href="https://es.wikipedia.org/wiki/Principio_antr%C3%B3pico" class="ancla">es.wikipedia.org</a></td>
+      <td class="info">Web para definir al Principio Antrópico</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_geographic.ico" alt="Icono de National Geographic" class="icon"></td>
+      <td class="info"><a href="https://www.nationalgeographic.com.es/ciencia/principio-antropico-punto-encuentro-entre-ciencia-religion_22350" class="ancla">www.nationalgeographic.com.es</a></td>
+      <td class="info">Web para detalles y comparativa del Principio Antrópico</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/misfilosofias.png" alt="Icono de Mis Filosofias" class="icon"></td>
+      <td class="info"><a href="https://www.misfilosofias.com/glosario/c/contingencia/" class="ancla">www.misfilosofias.com</a></td>
+      <td class="info">Web para definición de La Contingencia</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_vanguardia.ico" alt="Icono de La Vanguardia" class="icon"></td>
+      <td class="info"><a href="https://www.lavanguardia.com/vivo/psicologia/20220326/8154292/30-frases-celebres-te-haran-reflexionar-nbs.html" class="ancla">www.lavanguardia.com</a></td>
+      <td class="info">Web para la frase célebre relacionada con La Contingencia</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/ferratermora.jpg" alt="Icono de Ferratemora" class="icon"></td>
+      <td class="info"><a href="https://www.ferratermora.org/ency_concepto_ad_contingencia.html" class="ancla">www.ferratermora.org</a></td>
+      <td class="info">Web para la relación de La Contingencia</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_wiki.ico" alt="Icono de Wikipedia" class="icon"></td>
+      <td class="info"><a href="https://es.wikipedia.org/wiki/Primer_motor_inm%C3%B3vil
+        " class="ancla">es.wikipedia.org</a></td>
+      <td class="info">Web para la frase célebre relacionada con el Primer Motor Inmóvil</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_filosofia.ico" alt="Icono de Filosofía" class="icon"></td>
+      <td class="info"><a href="https://www.filosofia.net/materiales/sofiafilia/hf/soff_25.html
+        " class="ancla">www.filosofia.net</a></td>
+      <td class="info">Web para la Teoría de Las Cuatro Causas del Primer Motor Inmóvil</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/bicaalu.png" alt="Icono de Bicaalu" class="icon"></td>
+      <td class="info"><a href="https://www.bicaalu.com/la-apuesta-de-pascal/" class="ancla">www.bicaalu.com</a></td>
+      <td class="info">Web con toda la información acerca de La Apuesta de Pascal</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_confidencial.ico" alt="Icono de El Confidencial" class="icon"></td>
+      <td class="info"><a href="https://www.elconfidencial.com/tecnologia/2016-04-24/dios-no-juega-a-los-dados-y-otras-frases-cientificas-malinterpretadas_1188794/
+        " class="ancla">www.elconfidencial.com</a></td>
+      <td class="info">Web para la frase célebre relacionada con el Diseño Inteligente</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/diseñointeligente.jpg" alt="Icono de Diseño Inteligente" class="icon"></td>
+      <td class="info"><a href="https://xn--diseointeligente-9tb.org/que-es-el-diseno-inteligente/" class="ancla">xn--diseointeligente-9tb.org</a></td>
+      <td class="info">Web para definición del Diseño Inteligente</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_unav.ico" alt="Icono de UNAV" class="icon"></td>
+      <td class="info"><a href="https://www.unav.edu/web/ciencia-razon-y-fe/es-el-diseno-inteligente-una-teoria-cientifica-o-religiosa" class="ancla">www.unav.edu</a></td>
+      <td class="info">Web para el Conflicto del Diseño Inteligente</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/jotdown.jpg" alt="Icono de Jotdown" class="icon"></td>
+      <td class="info"><a href="https://www.jotdown.es/2012/01/existe-dios-i-el-argumento-cosmologico/" class="ancla">www.jotdown.es</a></td>
+      <td class="info">Web para frase célebre relacionada con el Argumento Cosmológico</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/namb.png" alt="Icono de Namb" class="icon"></td>
+      <td class="info"><a href="https://www.namb.net/apologetics/resource/el-argumento-cosmologico/
+        "
+      class="ancla">www.namb.net</a></td>
+      <td class="info">Web con toda la información del Argumento Cosmológico</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_creation.ico" alt="Icono de Creation" class="icon"></td>
+      <td class="info"><a href="https://creation.com/argumentos-para-dios
+        " class="ancla">creation.com</a></td>
+      <td class="info">Web con toda la información del Argumento Moral</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_gotquestions.ico" alt="Icono de Got Questions" class="icon"></td>
+      <td class="info"><a href="https://www.gotquestions.org/Espanol/argumento-ontologico.html" 
+        class="ancla">www.gotquestions.org</a></td>
+      <td class="info">Web para frase célebre relacionada con el Argumento Ontológico</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_creation.ico" alt="Icono de Creation" class="icon"></td>
+      <td class="info"><a href="https://creation.com/argumentos-para-dios" 
+        class="ancla">creation.com</a></td>
+      <td class="info">Web con toda la información del Argumento Ontológico</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_unav.ico" alt="Icono de UNAV" class="icon"></td>
+      <td class="info"><a href="https://www.unav.edu/web/ciencia-razon-y-fe/finalidad-natural-y-existencia-de-dios" class="ancla">www.unav.edu</a></td>
+      <td class="info">Web para frase célebre relacionada con el Argumento Teleológico</td>
+    </tr>
+    <tr align="center">
+      <td><img src="images/Icons/favicon_gotquestions.ico" alt="Icono de Got Questions" class="icon"></td>
+      <td class="info"><a href="https://www.gotquestions.org/Espanol/argumento-teleologico.html" 
+        class="ancla">www.gotquestions.org</a></td>
+      <td class="info">Web con toda la información del Argumento Teleológico</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,17 @@
+<div class="animate-rise" id="caption">
+  <b>
+    <p style="font-size: 60px;">"Si Dios no existe, no existen los objetivos morales."</p>
+    <p style="font-size: 40px;">- Fiódor Dostoyevski</p>
+  </b>
+</div>
+<div class="animate-rise" id="content">
+  <h1>¿Podemos ser buenos sin Dios?</h1>
+  <p>
+    Los deberes y valores morales nos impactan cada día. Por ejemplo, prácticamente toda persona sabe que torturar a los bebés solo por diversión es malo objetivamente, y tener compasión de los indefensos es objetivamente bueno. También fácilmente entendemos que los en desacuerdo son anormales (o sea, psicópatas). Pero ¿por qué? ¿Qué hace del mundo un mundo moral? La mejor explicación es Dios. Dios es el último estándar de lo que es bueno. Toda moralidad se mide por Su carácter, y ella nos es dada por Su voluntad. Ninguna otra cosa, sea la evolución, las personas finitas, o aún aislados hechos morales, proveen una base adecuada para sostener valores morales, deberes, y rendición de cuentas. Podemos formalizar este argumento así:
+  </p>
+  <ol>
+    <li><p>Si Dios no existe, no existen los objetivos morales.</p></li>
+    <li><p>Los objetivos morales existen.</p></li>
+    <li><p>Entonces, Dios existe.</p></li>
+  </ol>
+</div>
