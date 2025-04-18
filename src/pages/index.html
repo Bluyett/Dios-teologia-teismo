@@ -4,73 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/variables.js"></script>
 	</head>
   <body>
-    <div id="higher-container">
+    <div class="higher-container">
       <header>
-        <div class="header-content">
-          <div class="nav-title-container">
-            <div class="titles">
-              <a href="index.html" class="main-title">Dios, Teología y Teísmo | </a>
-              <a href="index.html" class="guider-title">Página Principal</a>
+        <div class="grid-header">
+          <div class="nav-title-container grid-item">
+            <div class="titles-container">
+              <div class="titles">
+                <a href="index.html" class="main-title">Dios, Teología y Teísmo | <span>Página Principal</span></a>
+              </div>
             </div>
-            <div class="nav-container">
-              <nav>
-                <button class="hamburger" id="arguments" type="button">
-                  Arguments
-                </button>
-                <ul class="hamburger-nav" id="arguments-nav">
-                  <li><a href="Arguments/Cosmologic.html">Argumento Cosmológico</a></li>
-                  <li><a href="Arguments/moral.html">Argumento Moral</a></li>
-                  <li><a href="Arguments/ontologic.html">Argumento Ontológico</a></li>
-                  <li><a href="Arguments/pascal.html">La Apuesta de Pascal</a></li>
-                  <li><a href="Arguments/teleologic.html">Argumento Teleológico</a></li>
-                </ul>
-                <button class="hamburger" id="theories" type="button">
-                  Theories
-                </button>
-                <ul class="hamburger-nav" id="theories-nav">
-                  <li><a href="Theories/antrophic_base.html">Principio Antrópico</a></li>
-                  <li><a href="Theories/contingence.html">Contingencia</a></li>
-                  <li><a href="Theories/first_inmovil_motor.html">El Primer Motor Inmóvil</a></li>
-                  <li><a href="Theories/smart_design.html">Diseño Inteligente</a></li>
-                </ul>
-              </nav>
-            </div>
+            <nav>
+              <button class="hamburger" id="arguments" type="button">
+                Argumentos
+              </button>
+              <ul class="hamburger-nav" id="arguments-nav">
+                <li><a href="Arguments/Cosmologic.html">Argumento Cosmológico</a></li>
+                <li><a href="Arguments/moral.html">Argumento Moral</a></li>
+                <li><a href="Arguments/ontologic.html">Argumento Ontológico</a></li>
+                <li><a href="Arguments/pascal.html">La Apuesta de Pascal</a></li>
+                <li><a href="Arguments/teleologic.html">Argumento Teleológico</a></li>
+              </ul>
+              <button class="hamburger" id="theories" type="button">
+                Teorías
+              </button>
+              <ul class="hamburger-nav" id="theories-nav">
+                <li><a href="Theories/antrophic_base.html">Principio Antrópico</a></li>
+                <li><a href="Theories/contingence.html">Contingencia</a></li>
+                <li><a href="Theories/first_inmovil_motor.html">El Primer Motor Inmóvil</a></li>
+                <li><a href="Theories/smart_design.html">Diseño Inteligente</a></li>
+              </ul>
+            </nav>
           </div>
-          <div class="dark-mode-container">
+          <div class="dark-mode-container grid-item">
             <button class="button dark-mode" type="button">
-              <img src="" alt="dark-mode-icon">
+              <img src="../assets/Icons/moon-solid.svg" alt="dark-mode-icon" class="icon">
             </button>
           </div>
-          <div class="search-container">
+          <div class="search-container grid-item">
 
           </div>
         </div>
       </header>
-      <div class="Background-container">
-        <img src="../assets/images/Principal/Nativity Wonder Hope - 16x9.jpg" alt="Background Image">
+      <div class="background-container">
+        <img src="../assets/images/Principal/Nativity Wonder Hope - 16x9.jpg" alt="Background Image" class="background-image">
       </div>
-      <div class="message-container">
+      <div class="message-container page-item">
         <div class="messages">
           <div class="message">
-            ' "Prefiero equivocarme creyendo en un Dios que no existe, que equivocarme no creyendo en un Dios que existe... si hay algo, si hay Alguien, tendré que dar cuenta de mi actitud de rechazo." '
+            <h2>
+              "Prefiero equivocarme creyendo en un Dios que no existe, que equivocarme no creyendo en un Dios que existe... si hay algo, si hay Alguien, tendré que dar cuenta de mi actitud de rechazo."
+            </h2>
           </div>
           <div class="autor">
-            " - Blaise Pascal (1623-1662) "
+            <h4>
+              - Blaise Pascal (1623-1662)
+            </h4>
           </div>
         </div>
       </div>
-      <article class="seccion">
+      <article class="seccion page-item">
         <div class="content-container">
-          <div class="image-container">
-            <img src="" alt="Creador de la Teología">
-          </div>
           <div class="info-content-container">
-            <h1>¿Qué es la Teología?</h1>
-            <div class="paragraph">
+            <div class="content-title">
+              <h1>¿Qué es la Teología?</h1>
+            </div>
+            <div class="image-container">
+              <img src="https://imgs.search.brave.com/yHqD3mw_z92qFkhTWQLf7lqoOor-AcimQZ7fxJH7Phk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcy/LnJ0dmUuZXMvYS82/NzYxNjI1L3NxdWFy/ZS8_aD0zMjA" alt="Atanasio de Alejandría" class="image-content">
               <p>
+                Atanasio de Alejandría
+              </p>
+            </div>
+            <div class="paragraph">
+              <p class="text">
                 La fe supera la razón pero no la elimina. La inteligencia humana, guiada por la Revelación de Dios, entra en el mundo de los
                 misterios sobrenaturales en busca de claridad y sentido. Aceptar los misterios de Dios impulsa a investigarlos con respeto y a
                 descubrir en ellos horizontes insospechados de racionalidad.<br>
@@ -80,14 +90,22 @@
                 satisfacerla. La teología es una ciencia de salvación, que debe en último término ayudar al hombre a conseguir su destino eterno.
               </p>
             </div>
-            <h1>¿Qué es el Teísmo?</h1>
-            <div class="paragraph">
+            <div class="content-title">
+              <h1>¿Qué es el Teísmo?</h1>
+            </div>
+            <div class="image-container">
+              <img src="https://imgs.search.brave.com/89ach8ZE1UkIwzvyWya0X0fpBFKTTLGduVMecg0qr9c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZ3ItYXNzZXRz/LmNvbS9hdXRob3Jz/LzE2NTE0NTM2MzJw/NS82MTcyLmpwZw" alt="Soren Kierkegaard" class="image-content">
               <p>
-                En términos generales el teísmo significa la creencia en el Dios viviente, que interviene en el curso del mundo y en la vida humana. En este sentido amplio, se dan rasgos teístas en la mayoría de las religiones: en las politeístas, en cuanto que los muchos dioses intervienen en mayor o menor grado en la vida humana; en las religiones de signo panteísta o monista, en la medida en que preconizan una unión íntima entre el hombre y la divinidad; en las religiones monoteístassobre todo, por relación a las cuales el teísmo adquiere su significado específico.
+                Soren Kierkegaard
               </p>
             </div>
             <div class="paragraph">
-              <p>
+              <p class="text">
+                En términos generales el teísmo significa la creencia en el Dios viviente, que interviene en el curso del mundo y en la vida humana. En este sentido amplio, se dan rasgos teístas en la mayoría de las religiones: en las politeístas, en cuanto que los muchos dioses intervienen en mayor o menor grado en la vida humana; en las religiones de signo panteísta o monista, en la medida en que preconizan una unión íntima entre el hombre y la divinidad; en las religiones monoteístassobre todo, por relación a las cuales el teísmo adquiere su significado específico.
+              </p>
+            </div>
+            <div class="paragraph note">
+              <p class="text">
                 En esta página, indagaremos acerca de diversas teorías filosóficas y argumentos (Ubicados en el menú de arriba), los cuales nos pueden dar una grata información acerca de la existencia de Dios.<br>
                 Antes de explorar los apartados, recomiendo hacerlo con una mente abierta, recordar que, entre la inmensidad del universo, somos apenas una pizca de arena, quizás menos que eso.<br>
                 Nuestras mentes no son capaces realmente de imaginar o teorizar algo tan grande. Al final de los días, solo nos queda vagar entre nuestros pobres pensamientos.
@@ -96,21 +114,21 @@
           </div>
         </div>
       </article>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-content-container">
-            <div class="web-autor">
-              <p>Desarrollador de la web: Bluyett</p>
-            </div>
-            <div class="slogan">
-              <p>LEARNING SOFTWARE WITH 🔥 FROM HONDURAS.</p>
-            </div>
-            <div class="bibliography">
-              <a href="bibliography.html">Bibliografía</a>
-            </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content-container">
+          <div class="web-autor">
+            <p class="footer-text">Desarrollador de la web: Bluyett</p>
+          </div>
+          <div class="slogan">
+            <p class="footer-text">LEARNING SOFTWARE WITH 🔥 FROM HONDURAS.</p>
+          </div>
+          <div class="bibliography">
+            <a href="bibliography.html">Bibliografía</a>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
