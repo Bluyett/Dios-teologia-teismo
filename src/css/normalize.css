@@ -1,5 +1,13 @@
 /* ** DEAFULT: MOBILES */
 
+/* ITEMS FOCUSED */
+
+[tabindex="0"]:focus{
+    outline: 2px solid var(--accent-color);
+    outline-offset: 1px;
+    border-radius: 5px;
+    box-shadow: 4px 4px solid var(--secondary-color);
+}
 /* VARIABLES */
 
 :root{
@@ -195,10 +203,10 @@ header{
 }
 .message{
     margin-bottom: var(--size-x-small);
-    font-size: var(--size-large);
+    font-size: var(--size-x-large);
 }
 .autor{
-    font-size: var(--size-medium);
+    font-size: var(--size-large);
 }
 
 /* Content */
@@ -332,6 +340,12 @@ footer{
         --size-x-large: 1.6rem;
         --size-xx-large: 1.8rem;
     }
+    .message{
+        font-size: var(--size-xx-large);
+    }
+    .autor{
+        font-size: var(--size-x-large);
+    }
     .image-content{
         width: var(--per-large);
     }
@@ -389,6 +403,7 @@ footer{
         height:var(--size-xx-large);
         background: none;
         box-sizing: border-box;
+        color: var(--primary-color);
         border: 0;
     }
     .footer-text{
