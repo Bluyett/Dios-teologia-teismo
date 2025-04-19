@@ -7,9 +7,10 @@
     <title>Principal</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
-    <script src="../js/variables.js"></script>
+    <script type="module" src="../js/main.js"></script>
 	</head>
   <body>
+    <div class="transparent-block"></div>
     <div class="higher-container">
       <header>
         <div class="grid-header">
@@ -28,54 +29,31 @@
               <button class="hamburger button-1" type="button" tabindex="-1" aria-label="Abrir menú de argumentos" aria-expanded="false">
                 Argumentos <img src="../assets/Icons/chevron-down-solid.svg" alt="chevron-down-icon" class="arrow-icon">
               </button>
-              <ul class="hamburger-nav">
-                <li><a href="Arguments/Cosmologic.html" tabindex="-1" aria-label="Ir a Argumento Cosmológico">Argumento Cosmológico</a></li>
-                <li><a href="Arguments/moral.html" tabindex="-1" aria-label="Ir a Argumento Mora">Argumento Moral</a></li>
-                <li><a href="Arguments/ontologic.html" tabindex="-1" aria-label="Ir a Argumento Ontológico">Argumento Ontológico</a></li>
-                <li><a href="Arguments/pascal.html" tabindex="-1" aria-label="Ir a La Apuesta de Pascal">La Apuesta de Pascal</a></li>
-                <li><a href="Arguments/teleologic.html" tabindex="-1" aria-label="Ir a Argumento Teleológico">Argumento Teleológico</a></li>
-              </ul>
+              <nav class="desktop-hamburger-menu">
+                <ul class="hamburger-nav">
+                  <li><a href="Arguments/Cosmologic.html" tabindex="-1" aria-label="Ir a Argumento Cosmológico">Argumento Cosmológico</a></li>
+                  <li><a href="Arguments/moral.html" tabindex="-1" aria-label="Ir a Argumento Mora">Argumento Moral</a></li>
+                  <li><a href="Arguments/ontologic.html" tabindex="-1" aria-label="Ir a Argumento Ontológico">Argumento Ontológico</a></li>
+                  <li><a href="Arguments/pascal.html" tabindex="-1" aria-label="Ir a La Apuesta de Pascal">La Apuesta de Pascal</a></li>
+                  <li><a href="Arguments/teleologic.html" tabindex="-1" aria-label="Ir a Argumento Teleológico">Argumento Teleológico</a></li>
+                </ul>
+              </nav>
               <button class="hamburger button-2" type="button" tabindex="-1" aria-label="Abrir menú de teorías" aria-expanded="false">
                 Teorías <img src="../assets/Icons/chevron-down-solid.svg" alt="chevron-down-icon" class="arrow-icon">
               </button>
-              <ul class="hamburger-nav">
-                <li><a href="Theories/antrophic_base.html" tabindex="-1" aria-label="Principio Antrópico">Principio Antrópico</a></li>
-                <li><a href="Theories/contingence.html" tabindex="-1" aria-label="Ir a Contingencia">Contingencia</a></li>
-                <li><a href="Theories/first_inmovil_motor.html" tabindex="-1" aria-label="El Primer Motor Inmóvil">El Primer Motor Inmóvil</a></li>
-                <li><a href="Theories/smart_design.html" tabindex="-1" aria-label="Ir a Diseño Inteligente">Diseño Inteligente</a></li>
-              </ul>
+              <nav class="desktop-hamburger-menu">
+                <ul class="hamburger-nav">
+                  <li><a href="Theories/antrophic_base.html" tabindex="-1" aria-label="Principio Antrópico">Principio Antrópico</a></li>
+                  <li><a href="Theories/contingence.html" tabindex="-1" aria-label="Ir a Contingencia">Contingencia</a></li>
+                  <li><a href="Theories/first_inmovil_motor.html" tabindex="-1" aria-label="El Primer Motor Inmóvil">El Primer Motor Inmóvil</a></li>
+                  <li><a href="Theories/smart_design.html" tabindex="-1" aria-label="Ir a Diseño Inteligente">Diseño Inteligente</a></li>
+                </ul>
+              </nav>
             </nav>
             <nav class="nav-mobile nav-mobile-item">
               <button type="button" class="menu-button" tabindex="0" aria-label="Abrir menú" aria-expanded="false">
-                <img src="../assets/Icons/bars-solid.svg" alt="hamburger-menu-button" class="icon">
+                <img src="../assets/Icons/bars-solid.svg" alt="hamburger-menu-button" class="icon menu-icon">
               </button>
-              <div class="mobile-hamburger-menu">
-                <button class="hamburger" type="button" tabindex="0" aria-label="Listado de argumentos">
-                  Argumentos ⌄
-                </button>
-                <ul class="hamburger-nav">
-                  <li><a href="Arguments/Cosmologic.html" tabindex="0" aria-label="Argumento Cosmológico">Argumento Cosmológico</a></li>
-                  <li><a href="Arguments/moral.html" tabindex="0" aria-label="Ir a Argumento Moral">Argumento Moral</a></li>
-                  <li><a href="Arguments/ontologic.html" tabindex="0" aria-label="Ir a Argumento Ontológico">Argumento Ontológico</a></li>
-                  <li><a href="Arguments/pascal.html" tabindex="0" aria-label="Ir a La Apuesta de Pascal">La Apuesta de Pascal</a></li>
-                  <li><a href="Arguments/teleologic.html" tabindex="0" aria-label="Ir a argumento teleológico">Argumento Teleológico</a></li>
-                </ul>
-                <button class="hamburger" type="button" tabindex="0" aria-label="Listado de teorías">
-                  Teorías ⌄
-                </button>
-                <ul class="hamburger-nav">
-                  <li><a href="Theories/antrophic_base.html" tabindex="0" aria-label="Principio Antrópico">Principio Antrópico</a></li>
-                  <li><a href="Theories/contingence.html" tabindex="0" aria-label="El Primer Motor Inmóvil">Contingencia</a></li>
-                  <li><a href="Theories/first_inmovil_motor.html" tabindex="0">El Primer Motor Inmóvil</a></li>
-                  <li><a href="Theories/smart_design.html" tabindex="0" aria-label="Ir a pDiseño Inteligente">Diseño Inteligente</a></li>
-                </ul>
-                <div class="search-box">
-                  <button type="button" class="magnifyng-glass-button" tabindex="0" aria-label="Buscar">
-                    <img src="../assets/Icons/magnifying-glass-solid.svg" alt="magnifying-glass-icon" class="icon-magnifyng">
-                  </button>
-                  <input type="search" placeholder="Buscar" id="search-input-1" name="search" class="search-item" tabindex="0" aria-label="Introducir búsqueda">
-                </div>
-              </div>
             </nav>
           </div>
           <div class="dark-mode-container">
@@ -93,6 +71,33 @@
           </div>
         </div>
       </header>
+      <div class="mobile-hamburger-menu">
+        <p class="hamburger" tabindex="0" aria-label="Listado de argumentos">
+          Argumentos
+        </p>
+        <ul class="hamburger-nav">
+          <li><a href="Arguments/Cosmologic.html" tabindex="0" aria-label="Argumento Cosmológico">Argumento Cosmológico</a></li>
+          <li><a href="Arguments/moral.html" tabindex="0" aria-label="Ir a Argumento Moral">Argumento Moral</a></li>
+          <li><a href="Arguments/ontologic.html" tabindex="0" aria-label="Ir a Argumento Ontológico">Argumento Ontológico</a></li>
+          <li><a href="Arguments/pascal.html" tabindex="0" aria-label="Ir a La Apuesta de Pascal">La Apuesta de Pascal</a></li>
+          <li><a href="Arguments/teleologic.html" tabindex="0" aria-label="Ir a argumento teleológico">Argumento Teleológico</a></li>
+        </ul>
+        <p class="hamburger" type="button" tabindex="0" aria-label="Listado de teorías">
+          Teorías
+        </p>
+        <ul class="hamburger-nav">
+          <li><a href="Theories/antrophic_base.html" tabindex="0" aria-label="Principio Antrópico">Principio Antrópico</a></li>
+          <li><a href="Theories/contingence.html" tabindex="0" aria-label="El Primer Motor Inmóvil">Contingencia</a></li>
+          <li><a href="Theories/first_inmovil_motor.html" tabindex="0">El Primer Motor Inmóvil</a></li>
+          <li><a href="Theories/smart_design.html" tabindex="0" aria-label="Ir a pDiseño Inteligente">Diseño Inteligente</a></li>
+        </ul>
+        <div class="search-box">
+          <button type="button" class="magnifyng-glass-button" tabindex="0" aria-label="Buscar">
+            <img src="../assets/Icons/magnifying-glass-solid.svg" alt="magnifying-glass-icon" class="icon-magnifyng">
+          </button>
+          <input type="search" placeholder="Buscar" id="search-input-1" name="search" class="search-item" tabindex="0" aria-label="Introducir búsqueda">
+        </div>
+      </div>
       <div class="background-container">
         <img src="../assets/images/Principal/Nativity Wonder Hope - 16x9.jpg" alt="Background Image" class="background-image" aria-hidden="true">
       </div>
@@ -171,21 +176,21 @@
           </div>
         </article>
       </div>
-    </div>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-content-container">
-          <div class="web-autor">
-            <p class="footer-text">Desarrollador de la web: Bluyett</p>
-          </div>
-          <div class="slogan">
-            <p class="footer-text">LEARNING SOFTWARE WITH 🔥 FROM HONDURAS.</p>
-          </div>
-          <div class="biblio-container">
-            <a href="bibliography.html" class="bibliography footer-text" tabindex="0" aria-label="Ir a bibliografía">Bibliografía</a>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-content-container">
+            <div class="web-autor">
+              <p class="footer-text">Desarrollador de la web: Bluyett</p>
+            </div>
+            <div class="slogan">
+              <p class="footer-text">LEARNING SOFTWARE WITH 🔥 FROM HONDURAS.</p>
+            </div>
+            <div class="biblio-container">
+              <a href="bibliography.html" class="bibliography footer-text" tabindex="0" aria-label="Ir a bibliografía">Bibliografía</a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
