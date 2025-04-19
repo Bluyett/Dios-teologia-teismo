@@ -106,7 +106,7 @@ span{
 
 /* Header */
 header{
-    top: 1vw;
+    top: var(--size-small);
     left: 1%;
     right: 1%;
     width: 98%;
@@ -202,28 +202,44 @@ header{
 }
 
 /* Content */
-.seccion{
+.higher-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section{
     display: flex;
     border: 1px solid var(--accent-color);
     box-shadow: 4px 4px var(--secondary-color);
     margin: var(--size-medium);
+    max-width: 1400px;
+
 }
 .content-container{
     color: var(--text-color);
     font-weight: var(--font-weight-light);
     margin: var(--size-medium);
 }
-.info-content-container{
+.info-content-container-1{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas:
     "Title-1"
     "Image-1"
-    "Paragraph-1"
+    "Paragraph-1";
+}
+.info-content-container-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
     "Title-2"
     "Image-2"
-    "Paragraph-2"
+    "Paragraph-2";
+}
+.info-content-container-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
     "Paragraph-3";
 }
 .content-title{
@@ -315,28 +331,26 @@ footer{
         --size-large: 1.3rem;
         --size-x-large: 1.6rem;
         --size-xx-large: 1.8rem;
-        --font-weight-bold: 700;
-        --font-weight-light: 400;
-        --per-xx-small: 5%;
-        --per-x-small: 20%;
-        --per-small: 35%;
-        --per-medium: 50%;
-        --per-large: 65%;
-        --per-x-large: 80%;
-        --per-xx-large: 95%;
     }
     .image-content{
         width: var(--per-large);
     }
-    .info-content-container{
+    .info-content-container-1{
         grid-template-columns: 2fr 3fr;
-        grid-template-rows: auto auto auto auto auto;
         grid-template-areas:
         "Title-1 Title-1"
-        "Image-1 Paragraph-1"
+        "Image-1 Paragraph-1";
+    }
+    .info-content-container-2{
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas:
         "Title-2 Title-2"
-        "Image-2 Paragraph-2"
-        "Paragraph-3 Paragraph-3";
+        "Image-2 Paragraph-2";
+    }
+    .info-content-container-3{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "Paragraph-3";
     }
     .grid-header{
         grid-template-columns: 75% 10% 15%;
@@ -394,15 +408,6 @@ footer{
         --size-large: 1.6rem;
         --size-x-large: 1.8rem;
         --size-xx-large: 2rem;
-        --font-weight-bold: 700;
-        --font-weight-light: 400;
-        --per-xx-small: 5%;
-        --per-x-small: 20%;
-        --per-small: 35%;
-        --per-medium: 50%;
-        --per-large: 65%;
-        --per-x-large: 80%;
-        --per-xx-large: 95%;
     }
     .menu-button, .titles-mobile, .main-title-mobile, .nav-mobile{
         display: none;
@@ -419,7 +424,7 @@ footer{
     }
     .nav-title-container{
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 68% 32%;
         grid-template-areas: "Titles Nav-Desktop";
         padding-left: 2%;
     }
@@ -448,15 +453,18 @@ footer{
         width: 100%;
     }
     .button-1{
-        width: 60%;
+        width: 59%;
     }
     .button-2{
-        width: 40%;
+        width: 41%;
     }
     .arrow-icon{
         width: var(--size-small);
     }
-    .info-content-container{
+    .info-content-container-1{
+        grid-template-columns: 1fr 3fr;
+    }
+    .info-content-container-2{
         grid-template-columns: 1fr 3fr;
     }
     .image-content{
