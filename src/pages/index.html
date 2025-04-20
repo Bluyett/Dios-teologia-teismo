@@ -58,7 +58,7 @@
           </div>
           <div class="dark-mode-container">
             <button class="dark-mode" type="button" tabindex="0" aria-label="Cambiar a modo oscuro">
-              <img src="../assets/Icons/moon-solid.svg" alt="dark-mode-icon" class="icon">
+              <img src="../assets/Icons/moon-solid.svg" alt="dark-mode-icon" class="icon mode-icon">
             </button>
           </div>
           <div class="search-container">
@@ -72,31 +72,29 @@
         </div>
       </header>
       <div class="mobile-hamburger-menu">
-        <p class="hamburger_list" tabindex="0" aria-label="Listado de argumentos">
-          Argumentos
-        </p>
-        <ul class="hamburger-nav">
+        <ul class="hamburger-nav grid-nav-1">
+          <li class="hamburger-head">
+            <p class="hamburger-list grid-header-1" tabindex="0" aria-label="Listado de argumentos">
+              Argumentos
+            </p>
+          </li>
           <li><a href="Arguments/Cosmologic.html" tabindex="0" aria-label="Argumento Cosmológico">Argumento Cosmológico</a></li>
           <li><a href="Arguments/moral.html" tabindex="0" aria-label="Ir a Argumento Moral">Argumento Moral</a></li>
           <li><a href="Arguments/ontologic.html" tabindex="0" aria-label="Ir a Argumento Ontológico">Argumento Ontológico</a></li>
           <li><a href="Arguments/pascal.html" tabindex="0" aria-label="Ir a La Apuesta de Pascal">La Apuesta de Pascal</a></li>
           <li><a href="Arguments/teleologic.html" tabindex="0" aria-label="Ir a argumento teleológico">Argumento Teleológico</a></li>
         </ul>
-        <p class="hamburger_list" type="button" tabindex="0" aria-label="Listado de teorías">
-          Teorías
-        </p>
-        <ul class="hamburger-nav">
+        <ul class="hamburger-nav grid-nav-2">
+          <li class="hamburger-head">
+            <p class="hamburger-list grid-header-2" type="button" tabindex="0" aria-label="Listado de teorías">
+              Teorías
+            </p>
+          </li>
           <li><a href="Theories/antrophic_base.html" tabindex="0" aria-label="Principio Antrópico">Principio Antrópico</a></li>
           <li><a href="Theories/contingence.html" tabindex="0" aria-label="El Primer Motor Inmóvil">Contingencia</a></li>
           <li><a href="Theories/first_inmovil_motor.html" tabindex="0">El Primer Motor Inmóvil</a></li>
           <li><a href="Theories/smart_design.html" tabindex="0" aria-label="Ir a pDiseño Inteligente">Diseño Inteligente</a></li>
         </ul>
-        <div class="search-box">
-          <button type="button" class="magnifyng-glass-button" tabindex="0" aria-label="Buscar">
-            <img src="../assets/Icons/magnifying-glass-solid.svg" alt="magnifying-glass-icon" class="icon-magnifyng">
-          </button>
-          <input type="search" placeholder="Buscar" id="search-input-1" name="search" class="search-item" tabindex="0" aria-label="Introducir búsqueda">
-        </div>
       </div>
       <div class="background-container">
         <img src="../assets/images/Principal/Nativity Wonder Hope - 16x9.jpg" alt="Background Image" class="background-image" aria-hidden="true">
@@ -177,8 +175,14 @@
         </article>
       </div>
       <footer>
-        <div class="footer-container">
+        <div class="footer-container"></div>
           <div class="footer-content-container">
+            <div class="search-box-hamburger">
+              <button type="button" class="magnifyng-glass-button-hamburger" tabindex="0" aria-label="Buscar">
+                <img src="../assets/Icons/magnifying-glass-solid.svg" alt="magnifying-glass-icon" class="icon-magnifyng-hamburger">
+              </button>
+              <input type="search" placeholder="Buscar" id="search-input-1" name="search" class="search-item-hamburger" tabindex="0" aria-label="Introducir búsqueda">
+            </div>
             <div class="web-autor">
               <p class="footer-text">Desarrollador de la web: Bluyett</p>
             </div>
