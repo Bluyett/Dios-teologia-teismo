@@ -3,110 +3,194 @@
 	<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre muchos aspectos acerca de Dios, la Teología, y el Teísmo">
     <title>Principal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@400;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script type="module" src="../js/main.js"></script>
 	</head>
   <body>
-    <div id="higher-container">
+    <div class="transparent-block"></div>
+    <div class="higher-container">
       <header>
-        <div class="header-content">
+        <div class="grid-header">
           <div class="nav-title-container">
-            <div class="titles">
-              <a href="index.html" class="main-title">Dios, Teología y Teísmo | </a>
-              <a href="index.html" class="guider-title">Página Principal</a>
+            <div class="titles-container titles-item">
+              <div class="titles-desktop">
+                <a href="index.html" class="main-title-desktop" tabindex="-1" aria-label="Ir a página principal">Dios, Teología y Teísmo | <span>Página Principal</span></a>
+              </div>
+              <div class="titles-mobile">
+                <a href="index.html" class="main-title-mobile" tabindex="0" aria-label="Ir a página principal">Dios, Teología y Teísmo <br>
+                  <span>Página Principal</span>
+                </a>
+              </div>
             </div>
-            <div class="nav-container">
-              <nav>
-                <button class="hamburger" id="arguments" type="button">
-                  Arguments
+            <nav class="nav-desktop nav-desktop-item">
+              <div class="desktop-hamburger-nav-1">
+                <button class="hamburger button-1" type="button" tabindex="-1" aria-label="Abrir menúde argumentos" aria-expanded="false">
+                  Argumentos <img src="../assets/Icons/chevron-down-solid.svg" alt="chevron-down-icon"class="arrow-icon">
                 </button>
-                <ul class="hamburger-nav" id="arguments-nav">
-                  <li><a href="Arguments/Cosmologic.html">Argumento Cosmológico</a></li>
-                  <li><a href="Arguments/moral.html">Argumento Moral</a></li>
-                  <li><a href="Arguments/ontologic.html">Argumento Ontológico</a></li>
-                  <li><a href="Arguments/pascal.html">La Apuesta de Pascal</a></li>
-                  <li><a href="Arguments/teleologic.html">Argumento Teleológico</a></li>
-                </ul>
-                <button class="hamburger" id="theories" type="button">
-                  Theories
+                <div class="desktop-hamburger-menu-1">
+                    <div><a href="Arguments/Cosmologic.html" tabindex="-1" aria-label="Ir a ArgumentoCosmológico">Argumento Cosmológico</a></div>
+                    <div><a href="Arguments/moral.html" tabindex="-1" aria-label="Ir a ArgumentoMora">Argumento Moral</a></div>
+                    <div><a href="Arguments/ontologic.html" tabindex="-1" aria-label="Ir a ArgumentoOntológico">Argumento Ontológico</a></div>
+                    <div><a href="Arguments/pascal.html" tabindex="-1" aria-label="Ir a La Apuesta dePascal">La Apuesta de Pascal</a></div>
+                    <div><a href="Arguments/teleologic.html" tabindex="-1" aria-label="Ir a ArgumentoTeleológico">Argumento Teleológico</a></div>
+                </div>
+              </div>
+              <div class="desktop-hamburger-nav-2">
+                <button class="hamburger button-2" type="button" tabindex="-1" aria-label="Abrir menúde teorías" aria-expanded="false">
+                  Teorías <img src="../assets/Icons/chevron-down-solid.svg" alt="chevron-down-icon"class="arrow-icon">
                 </button>
-                <ul class="hamburger-nav" id="theories-nav">
-                  <li><a href="Theories/antrophic_base.html">Principio Antrópico</a></li>
-                  <li><a href="Theories/contingence.html">Contingencia</a></li>
-                  <li><a href="Theories/first_inmovil_motor.html">El Primer Motor Inmóvil</a></li>
-                  <li><a href="Theories/smart_design.html">Diseño Inteligente</a></li>
-                </ul>
-              </nav>
-            </div>
+                <div class="desktop-hamburger-menu-2">
+                    <div><a href="Theories/antrophic_base.html" tabindex="-1" aria-label="PrincipioAntrópico">Principio Antrópico</a></div>
+                    <div><a href="Theories/contingence.html" tabindex="-1" aria-label="Ir aContingencia">Contingencia</a></div>
+                    <div><a href="Theories/first_inmovil_motor.html" tabindex="-1" aria-label="ElPrimer Motor Inmóvil">El Primer Motor Inmóvil</a></div>
+                    <div><a href="Theories/smart_design.html" tabindex="-1" aria-label="Ir a DiseñoInteligente">Diseño Inteligente</a></div>
+                </div>
+              </div>
+            </nav>
+            <nav class="nav-mobile nav-mobile-item">
+              <button type="button" class="menu-button" tabindex="0" aria-label="Abrir menú" aria-expanded="false">
+                <img src="../assets/Icons/bars-solid.svg" alt="hamburger-menu-button" class="icon menu-icon">
+              </button>
+            </nav>
           </div>
           <div class="dark-mode-container">
-            <button class="button dark-mode" type="button">
-              <img src="" alt="dark-mode-icon">
+            <button class="dark-mode" type="button" tabindex="0" aria-label="Cambiar a modo oscuro">
+              <img src="../assets/Icons/moon-solid.svg" alt="dark-mode-icon" class="icon mode-icon">
             </button>
           </div>
           <div class="search-container">
-
+            <div class="search-box">
+              <button type="button" class="magnifyng-glass-button" tabindex="-1" aria-label="Buscar">
+                <img src="../assets/Icons/magnifying-glass-solid.svg" alt="magnifying-glass-icon" class="icon-magnifyng">
+              </button>
+              <input type="search" placeholder="Buscar" id="search-input-2" name="search" class="search-item" tabindex="-1" aria-label="Introducir búsqueda">
+            </div>
           </div>
         </div>
       </header>
-      <div class="Background-container">
-        <img src="../assets/images/Principal/Nativity Wonder Hope - 16x9.jpg" alt="Background Image">
+      <div class="mobile-hamburger-menu">
+        <ul class="hamburger-nav grid-nav-1">
+          <li class="hamburger-head">
+            <p class="hamburger-list grid-header-1" tabindex="0" aria-label="Listado de argumentos">
+              Argumentos
+            </p>
+          </li>
+          <li><a href="Arguments/Cosmologic.html" tabindex="0" aria-label="Argumento Cosmológico">Argumento Cosmológico</a></li>
+          <li><a href="Arguments/moral.html" tabindex="0" aria-label="Ir a Argumento Moral">Argumento Moral</a></li>
+          <li><a href="Arguments/ontologic.html" tabindex="0" aria-label="Ir a Argumento Ontológico">Argumento Ontológico</a></li>
+          <li><a href="Arguments/pascal.html" tabindex="0" aria-label="Ir a La Apuesta de Pascal">La Apuesta de Pascal</a></li>
+          <li><a href="Arguments/teleologic.html" tabindex="0" aria-label="Ir a argumento teleológico">Argumento Teleológico</a></li>
+        </ul>
+        <ul class="hamburger-nav grid-nav-2">
+          <li class="hamburger-head">
+            <p class="hamburger-list grid-header-2" type="button" tabindex="0" aria-label="Listado de teorías">
+              Teorías
+            </p>
+          </li>
+          <li><a href="Theories/antrophic_base.html" tabindex="0" aria-label="Principio Antrópico">Principio Antrópico</a></li>
+          <li><a href="Theories/contingence.html" tabindex="0" aria-label="El Primer Motor Inmóvil">Contingencia</a></li>
+          <li><a href="Theories/first_inmovil_motor.html" tabindex="0">El Primer Motor Inmóvil</a></li>
+          <li><a href="Theories/smart_design.html" tabindex="0" aria-label="Ir a pDiseño Inteligente">Diseño Inteligente</a></li>
+        </ul>
+      </div>
+      <div class="background-container">
+        <img src="../assets/images/Principal/Nativity Wonder Hope - 16x9.jpg" alt="Background Image" class="background-image" aria-hidden="true">
       </div>
       <div class="message-container">
         <div class="messages">
           <div class="message">
-            ' "Prefiero equivocarme creyendo en un Dios que no existe, que equivocarme no creyendo en un Dios que existe... si hay algo, si hay Alguien, tendré que dar cuenta de mi actitud de rechazo." '
+            <p>
+              "Prefiero equivocarme creyendo en un Dios que no existe, que equivocarme no creyendo en un Dios que existe... si hay algo, si hay Alguien, tendré que dar cuenta de mi actitud de rechazo."
+            <p>
           </div>
           <div class="autor">
-            " - Blaise Pascal (1623-1662) "
+            <p>
+              - Blaise Pascal (1623-1662)
+            </p>
           </div>
         </div>
       </div>
-      <article class="seccion">
-        <div class="content-container">
-          <div class="image-container">
-            <img src="" alt="Creador de la Teología">
-          </div>
-          <div class="info-content-container">
-            <h1>¿Qué es la Teología?</h1>
-            <div class="paragraph">
-              <p>
-                La fe supera la razón pero no la elimina. La inteligencia humana, guiada por la Revelación de Dios, entra en el mundo de los
-                misterios sobrenaturales en busca de claridad y sentido. Aceptar los misterios de Dios impulsa a investigarlos con respeto y a
-                descubrir en ellos horizontes insospechados de racionalidad.<br>
-                La teología es ciencia de la fe. Trata de comprender mejor los misterios revelados por Dios y exponerlos de manera sistemática y
-                ordenada, basándose en la Sagrada Escritura y la Tradición, con la guía del Magisterio.<br>
-                La teología cristiana tiene un origen propio y específico. No procede de la simple curiosidad intelectual ni se dedica a
-                satisfacerla. La teología es una ciencia de salvación, que debe en último término ayudar al hombre a conseguir su destino eterno.
-              </p>
-            </div>
-            <h1>¿Qué es el Teísmo?</h1>
-            <div class="paragraph">
-              <p>
-                En términos generales el teísmo significa la creencia en el Dios viviente, que interviene en el curso del mundo y en la vida humana. En este sentido amplio, se dan rasgos teístas en la mayoría de las religiones: en las politeístas, en cuanto que los muchos dioses intervienen en mayor o menor grado en la vida humana; en las religiones de signo panteísta o monista, en la medida en que preconizan una unión íntima entre el hombre y la divinidad; en las religiones monoteístassobre todo, por relación a las cuales el teísmo adquiere su significado específico.
-              </p>
-            </div>
-            <div class="paragraph">
-              <p>
-                En esta página, indagaremos acerca de diversas teorías filosóficas y argumentos (Ubicados en el menú de arriba), los cuales nos pueden dar una grata información acerca de la existencia de Dios.<br>
-                Antes de explorar los apartados, recomiendo hacerlo con una mente abierta, recordar que, entre la inmensidad del universo, somos apenas una pizca de arena, quizás menos que eso.<br>
-                Nuestras mentes no son capaces realmente de imaginar o teorizar algo tan grande. Al final de los días, solo nos queda vagar entre nuestros pobres pensamientos.
-              </p>
+      <div class="higher-section">
+        <article class="section">
+          <div class="content-container">
+            <div class="info-content-container-1">
+              <div class="content-title title-1-item">
+                <h1>¿Qué es la Teología?</h1>
+              </div>
+              <div class="image-container image-1-item">
+                <img src="https://imgs.search.brave.com/yHqD3mw_z92qFkhTWQLf7lqoOor-AcimQZ7fxJH7Phk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcy/LnJ0dmUuZXMvYS82/NzYxNjI1L3NxdWFy/ZS8_aD0zMjA" alt="Atanasio de Alejandría" class="image-content" aria-hidden="true">
+                <p>
+                  Atanasio de Alejandría
+                </p>
+              </div>
+              <div class="paragraph paragraph-1-item">
+                <p class="text">
+                  La fe supera la razón pero no la elimina. La inteligencia humana, guiada por la Revelación de Dios, entra en el mundo de los
+                  misterios sobrenaturales en busca de claridad y sentido. Aceptar los misterios de Dios impulsa a investigarlos con respeto y a
+                  descubrir en ellos horizontes insospechados de racionalidad.<br>
+                  La teología es ciencia de la fe. Trata de comprender mejor los misterios revelados por Dios y exponerlos de manera sistemática y
+                  ordenada, basándose en la Sagrada Escritura y la Tradición, con la guía del Magisterio.<br>
+                  La teología cristiana tiene un origen propio y específico. No procede de la simple curiosidad intelectual ni se dedica a
+                  satisfacerla. La teología es una ciencia de salvación, que debe en último término ayudar al hombre a conseguir su destino eterno.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+        <article class="section">
+          <div class="content-container">
+            <div class="info-content-container-2">
+              <div class="content-title title-2-item">
+                <h1>¿Qué es el Teísmo?</h1>
+              </div>
+              <div class="image-container image-2-item">
+                <img src="https://imgs.search.brave.com/89ach8ZE1UkIwzvyWya0X0fpBFKTTLGduVMecg0qr9c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZ3ItYXNzZXRz/LmNvbS9hdXRob3Jz/LzE2NTE0NTM2MzJw/NS82MTcyLmpwZw" alt="Soren Kierkegaard" class="image-content" aria-hidden="true">
+                <p>
+                  Soren Kierkegaard
+                </p>
+              </div>
+              <div class="paragraph paragraph-2-item">
+                <p class="text">
+                  En términos generales el teísmo significa la creencia en el Dios viviente, que interviene en el curso del mundo y en la vida humana. En este sentido amplio, se dan rasgos teístas en la mayoría de las religiones: en las politeístas, en cuanto que los muchos dioses intervienen en mayor o menor grado en la vida humana; en las religiones de signo panteísta o monista, en la medida en que preconizan una unión íntima entre el hombre y la divinidad; en las religiones monoteístassobre todo, por relación a las cuales el teísmo adquiere su significado específico.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="section">
+          <div class="content-container">
+            <div class="info-content-container-3">
+              <div class="paragraph note paragraph-3-item">
+                <p class="text">
+                  En esta página, indagaremos acerca de diversas teorías filosóficas y argumentos (Ubicados en el menú de arriba), los cuales nos pueden dar una grata información acerca de la existencia de Dios.<br>
+                  Antes de explorar los apartados, recomiendo hacerlo con una mente abierta, recordar que, entre la inmensidad del universo, somos apenas una pizca de arena, quizás menos que eso.<br>
+                  Nuestras mentes no son capaces realmente de imaginar o teorizar algo tan grande. Al final de los días, solo nos queda vagar entre nuestros pobres pensamientos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
       <footer>
-        <div class="footer-container">
+        <div class="footer-container"></div>
           <div class="footer-content-container">
+            <div class="search-box-hamburger">
+              <button type="button" class="magnifyng-glass-button-hamburger" tabindex="0" aria-label="Buscar">
+                <img src="../assets/Icons/magnifying-glass-solid.svg" alt="magnifying-glass-icon" class="icon-magnifyng-hamburger">
+              </button>
+              <input type="search" placeholder="Buscar" id="search-input-1" name="search" class="search-item-hamburger" tabindex="0" aria-label="Introducir búsqueda">
+            </div>
             <div class="web-autor">
-              <p>Desarrollador de la web: Bluyett</p>
+              <p class="footer-text">Desarrollador de la web: Bluyett</p>
             </div>
             <div class="slogan">
-              <p>LEARNING SOFTWARE WITH 🔥 FROM HONDURAS.</p>
+              <p class="footer-text">LEARNING SOFTWARE WITH 🔥 FROM HONDURAS.</p>
             </div>
-            <div class="bibliography">
-              <a href="bibliography.html">Bibliografía</a>
+            <div class="biblio-container">
+              <a href="bibliography.html" class="bibliography footer-text" tabindex="0" aria-label="Ir a bibliografía">Bibliografía</a>
             </div>
           </div>
         </div>
