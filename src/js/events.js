@@ -1,4 +1,4 @@
-export {display_menu, change_theme, initializeTheme, initializeIcon};
+export {display_menu, change_theme, initializeTheme, initializeIcon, display_desktop_menu, hide_desktop_menu};
 
 function initializeTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -45,3 +45,6 @@ function change_theme(mode_icon){
     document.documentElement.setAttribute('data-theme', new_theme);
     localStorage.setItem('theme', new_theme);
 }
+
+function display_desktop_menu(desktop_hamburger_menu){desktop_hamburger_menu.classList.add("active")};
+function hide_desktop_menu(desktop_hamburger_menu){desktop_hamburger_menu.classList.remove("active")};
