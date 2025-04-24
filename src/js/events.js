@@ -1,4 +1,4 @@
-export {display_menu, change_theme, initializeTheme, initializeIcon, display_desktop_menu, hide_desktop_menu};
+export {display_menu, change_theme, initializeTheme, initializeIcon, display_desktop_menu, hide_desktop_menu, header_scroll, search_accent_focus,search_accent_focusout, search_accent_hover, search_accent_hoverout};
 
 function initializeTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -48,3 +48,14 @@ function change_theme(mode_icon){
 
 function display_desktop_menu(desktop_hamburger_menu){desktop_hamburger_menu.classList.add("active")};
 function hide_desktop_menu(desktop_hamburger_menu){desktop_hamburger_menu.classList.remove("active")};
+function search_accent_focus(search_box){search_box.style.outline = "1px solid var(--constant-text-color)"; search_box.style.border = "1px solid var(--constant-accent-color)";}
+function search_accent_focusout(search_box){search_box.style.outline = "none"; search_box.style.border = "1px solid var(--white-color-transparent)";}
+function search_accent_hover(search_box){search_box.style.border = "1px solid var(--constant-text-color)"}
+function search_accent_hoverout(search_box){search_box.style.border = "1px solid var(--white-color-transparent)"}
+function header_scroll(header){
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+}
