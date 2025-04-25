@@ -1,11 +1,11 @@
-import { display_menu, change_theme, initializeTheme, initializeIcon, display_desktop_menu, hide_desktop_menu, header_scroll, search_accent_focus,search_accent_focusout, search_accent_hover, search_accent_hoverout} from "./events.js";
+import { display_menu, change_theme, initializeTheme, initializeIcon, display_desktop_menu, hide_desktop_menu, header_scroll, search_accent_focus,search_accent_focusout, search_accent_hover, search_accent_hoverout, initSmoothScroll, initScrollEffects, display_top_button, return_top} from "./events.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    initializeTheme()
+    initializeTheme();
+    initSmoothScroll();
     // ** INICIALIZACIÓN DE ELEMENTOS **
-
 
     // InputItems
     const menu_button = document.querySelector(".menu-button");
@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const button_1 = document.querySelector(".button-1");
     const button_2 = document.querySelector(".button-2");
     const search_item = document.querySelector(".search-item");
+    const top_button_container = document.querySelector(".top-button-container");
+    const top_button = document.querySelector(".top-button");
 
     // Containers
     const mobile_hamburger_menu = document.querySelector(".mobile-hamburger-menu");
@@ -26,15 +28,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const desktop_hamburger_menu_2 = document.querySelector(".desktop-hamburger-menu-2")
     const search_box = document.querySelector(".search-box");
     const header = document.querySelector("header");
-
+    const section_1 = document.querySelector(".section-1");
+    const section_2 = document.querySelector(".section-2");
+    const section_3 = document.querySelector(".section-3");
+    const message = document.querySelector(".message");
+    const autor = document.querySelector(".autor");
+    const title_1 = document.querySelector(".title-1");
+    const title_2 = document.querySelector(".title-2");
+    const image_1 = document.querySelector(".image-1");
+    const image_2 = document.querySelector(".image-2");
+    const text_1 = document.querySelector(".text-1");
+    const text_2 = document.querySelector(".text-2");
+    const text_3 = document.querySelector(".text-3");
 
     // Assets
     const menu_icon = document.querySelector(".menu-icon");
     const mode_icon = document.querySelector(".mode-icon");
 
+    // ** ARRAYS DE ELEMENTOS
 
+    const lenis_smooth_items = [header, mobile_hamburger_menu, message, autor, section_1, section_2, section_3, title_1, title_2, image_1, image_2, text_1, text_2, text_3];
+
+    
     // ** LLAMADAS A EVENTOS **
-
+    initScrollEffects(lenis_smooth_items);
     initializeIcon(mode_icon);
     menu_button.addEventListener("click", () => display_menu(menu_button, menu_icon, mobile_hamburger_menu, transparent_block, message_container, higher_section, search_box_hamburger, footer));
     dark_mode_button.addEventListener("click", () => change_theme(mode_icon));
@@ -54,5 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     search_item_hamburger.addEventListener("focusout", () => search_accent_focusout(search_box_hamburger));
     search_box_hamburger.addEventListener("mouseenter", () => search_accent_hover(search_box_hamburger));
     search_box_hamburger.addEventListener("mouseleave", () => search_accent_hoverout(search_box_hamburger));
-    window.addEventListener("scroll", () => header_scroll(header));
-})
+    window.addEventListener("scroll", () => {header_scroll(header), display_top_button(top_button_container)});
+    top_button.addEventListener("click", () => return_top());
+    // Feature futura | search_item.addEventListener("input", search_init(search_item))
+});
