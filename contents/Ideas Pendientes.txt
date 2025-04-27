@@ -1,2 +1,8 @@
 - Agregar mas queries para mejor transición de estilado
 - No olvides el focus para tablets y ordenadores
+- Ver como reiniciar animaciones al cambiar de tema
+- Usar react para el preloader
+- Añadir funcionalidad de búsqueda
+
+- Investigar bien como añadir este módulo:
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>

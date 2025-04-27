@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const text_3 = document.querySelector(".text-3");
 
     // Assets
+    const background_image = document.querySelector(".image-content");
     const menu_icon = document.querySelector(".menu-icon");
     const mode_icon = document.querySelector(".mode-icon");
 
@@ -53,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // ** LLAMADAS A EVENTOS **
     initScrollEffects(lenis_smooth_items);
     initializeIcon(mode_icon);
+    header_scroll(header);
+    display_top_button(top_button);
     menu_button.addEventListener("click", () => display_menu(menu_button, menu_icon, mobile_hamburger_menu, transparent_block, message_container, higher_section, search_box_hamburger, footer));
     dark_mode_button.addEventListener("click", () => change_theme(mode_icon));
     button_1.addEventListener("mouseenter", () => display_desktop_menu(desktop_hamburger_menu_1));
@@ -71,7 +74,15 @@ document.addEventListener("DOMContentLoaded", () => {
     search_item_hamburger.addEventListener("focusout", () => search_accent_focusout(search_box_hamburger));
     search_box_hamburger.addEventListener("mouseenter", () => search_accent_hover(search_box_hamburger));
     search_box_hamburger.addEventListener("mouseleave", () => search_accent_hoverout(search_box_hamburger));
-    window.addEventListener("scroll", () => {header_scroll(header), display_top_button(top_button_container)});
+    window.addEventListener("scroll", () => {
+        header_scroll(header);
+        display_top_button(top_button_container);
+        if (background_image) {
+            const scroll_position = window.scrollY;
+            const parallaxSpeed = -0.5;
+            background_image.style.transform = `translateY(${scroll_position * parallaxSpeed}px)`;
+        }
+    });
     top_button.addEventListener("click", () => return_top());
     // Feature futura | search_item.addEventListener("input", search_init(search_item))
 });

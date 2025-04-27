@@ -46,7 +46,7 @@ header, .mobile-hamburger-menu, .message, .autor, .section, .content-title, .ima
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease;
 }
-header.visible, .mobile-hamburger-menu.visible, .message.visible, .autor.visible, .section.visible, .content-title.visible, .image-container.visible, .paragraph.visible, .top-button-container{
+header.visible, .mobile-hamburger-menu.visible, .message.visible, .autor.visible, .section.visible, .content-title.visible, .image-container.visible, .paragraph.visible, .top-button-container.visible{
     opacity: 1;
     transform: translateY(0);
 }
@@ -302,7 +302,8 @@ header{
     transition-property: background-color, box-shadow, border-radius;
     transition-duration: 0.5s;
     transition-timing-function: ease;
-    transition-delay: 1s;}
+    transition-delay: 1s;
+}
 header.scrolled{
     background-color: var(--constant-back-color);
     box-shadow: 5px 5px var(--black-color-transparent);
@@ -360,13 +361,20 @@ header.scrolled{
     height: 100vh;
     overflow: hidden;
     background: none;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
 }
 .background-image{
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    will-change: transform;
 }
 .message-container{
     display: flex;
@@ -377,7 +385,7 @@ header.scrolled{
     margin-left: var(--size-large);
     width: 75%;
     height: 30vh;
-    z-index: 3;
+    z-index: 4;
 }
 .messages{
     font-family:var(--secondary-font);
@@ -397,6 +405,8 @@ header.scrolled{
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 100vh;
+    z-index: 3;
 }
 .section{
     display: flex;
@@ -405,7 +415,6 @@ header.scrolled{
     box-shadow: 4px 4px var(--secondary-color);
     margin: var(--size-medium);
     max-width: 1400px;
-
 }
 .content-container{
     color: var(--text-color);
@@ -490,6 +499,7 @@ footer{
     padding-top: var(--size-medium);
     padding-bottom: var(--size-large);
     margin-bottom: 0;
+    z-index: 3;
 }
 footer.menu-hamburger-displayed{
     position: absolute;
@@ -631,6 +641,9 @@ footer.menu-hamburger-displayed{
             --size-large: 1.1rem;
             --size-x-large: 1.3rem;
             --size-xx-large: 1.6rem;
+        }
+        header{
+            height: 15vh;
         }
         .mobile-hamburger-menu.active{
             display: grid;

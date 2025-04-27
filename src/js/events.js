@@ -8,6 +8,7 @@ function initializeIcon(mode_icon){
     const current_theme = document.documentElement.getAttribute('data-theme');
     if (current_theme === "dark") {
         mode_icon.setAttribute('src', '../assets/Icons/sun-solid.svg');
+        mode_icon.setAttribute('alt', 'Icono en forma de sol')
     }
 }
 function display_menu(menu_button, menu_icon, mobile_hamburger_menu, transparent_block, message_container, higher_section, search_box_hamburger, footer){
@@ -40,9 +41,11 @@ function change_theme(mode_icon){
     if (current_theme === "light") {
         new_theme = "dark";
         mode_icon.setAttribute('src', '../assets/Icons/sun-solid.svg');
+        mode_icon.setAttribute('alt', 'Icono en forma de sol')
     } else {
         new_theme = "light";
         mode_icon.setAttribute('src', '../assets/Icons/moon-solid.svg');
+        mode_icon.setAttribute('alt', 'Icono en forma de luna')
     }
     document.documentElement.setAttribute('data-theme', new_theme);
     localStorage.setItem('theme', new_theme);
