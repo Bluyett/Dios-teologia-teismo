@@ -1,0 +1,74 @@
+/* ** GLOBALS RULES ** */
+body{
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+/* ** Global Colors */
+.desktop-hamburger-menu-1.active, .desktop-hamburger-menu-2.active, header.scrolled, footer{background-color: var(--constant-back-color);}
+header, footer, .hamburger, .hamburger-list, a, .search-item-hamburger, .messages{color: var(--constant-text-color);}
+/* ** Global Font */
+header, .content-container, footer, .hamburger-nav, .hamburger, .search-item, .search-item-hamburger, .hamburger, .hamburger-list{
+  font-family:var(--primary-font);
+  font-weight:var(--font-weight-bold);
+}
+.higher-container{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+.message-container.disabled, .higher-section.disabled, .higher-container.disabled, header.disabled{display: none;}
+.dark-mode, .hamburger, .menu-button, .hamburger-list, .magnifyng-glass-button{
+  display: flex;
+  font-size:var(--size-medium);
+  background: none;
+  border: 0;
+  justify-content: center;
+}
+.desktop-hamburger-menu-1, .desktop-hamburger-menu-2, .mobile-hamburger-menu, .nav-desktop, .search-container, .titles-desktop, .transparent-block, .search-box-hamburger, .top-button-container{display: none;}
+.transparent-block.visible{
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black-color-transparent);
+  z-index: 998;
+}
+/* SPECIFIC ITEMS RULES */
+/* Icon and Ancla Items */
+a{text-decoration: none;}
+span{font-size:var(--size-medium);}
+.icon{
+  width: var(--size-x-large);
+  height: var(--size-x-large);
+}
+.search-item:focus, .search-item-hamburger:focus{
+  outline: none;
+  border: none;
+}
+/* Return to Top Button*/
+.top-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: var(--black-color-transparent);
+  border-radius: 100%;
+  width: 3em;
+  height: 3em;
+  right: var(--size-small);
+  bottom: var(--size-small);
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.top-button{
+  background: none;
+  border-radius: 100%;
+  border: none;
+  width: 100%;
+  height: 100%;
+}

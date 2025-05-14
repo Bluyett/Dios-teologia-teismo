@@ -1,0 +1,109 @@
+/* Content */
+.higher-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 100vh;
+  z-index: 3;
+}
+.section{
+  display: flex;
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  box-shadow: 4px 4px var(--secondary-color);
+  margin: var(--size-medium);
+  max-width: 1400px;
+}
+.content-container{
+  color: var(--text-color);
+  font-weight: var(--font-weight-light);
+  margin: var(--size-medium);
+}
+.info-content-container-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "Title-1"
+  "Image-1"
+  "Paragraph-1";
+}
+.info-content-container-2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "Title-2"
+  "Image-2"
+  "Paragraph-2";
+}
+.info-content-container-3{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "Title-3"
+  "Image-3"
+  "Paragraph-3";
+}
+.content-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.title-1-item{grid-area: Title-1;}
+.title-2-item{grid-area: Title-2;}
+.title-3-item{grid-area: Title-3;}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  padding: 2%;
+  height: auto;
+}
+.paragraph-1-item{grid-area: Paragraph-1;}
+.paragraph-2-item{grid-area: Paragraph-2;}
+.image-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1;
+  justify-content: center;
+  align-items: center;
+}
+.image-content{
+  width: 250px;
+  box-shadow: 5px 5px var(--secondary-color);
+}
+.image-1-item{grid-area: Image-1;}
+.image-2-item{grid-area: Image-2;}
+.image-3-item{grid-area: Image-3;}
+.paragraph-3-item{grid-area: Paragraph-3;}
+
+@media (min-width: 640px) {
+  .info-content-container-1{
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:
+    "Title-1 Title-1"
+    "Image-1 Paragraph-1";
+  }
+  .info-content-container-2{         
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:
+    "Title-2 Title-2"
+    "Paragraph-2 Image-2";
+  }
+  .info-content-container-3-index{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "Paragraph-3";
+  }
+  .info-content-container-3{
+      grid-template-columns: 2fr 3fr;
+      grid-template-areas:
+      "Title-3 Title-3"
+      "Image-3 Paragraph-3";
+  }
+}
+@media (min-width: 1180px) {
+  .info-content-container-1{grid-template-columns:1fr 3fr;}
+  .info-content-container-2{grid-template-columns:3fr 1fr;}
+}
