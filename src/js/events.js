@@ -1,5 +1,10 @@
 export {display_menu, change_theme, initializeTheme, initializeIcon, display_desktop_menu, hide_desktop_menu, header_scroll, search_accent_focus,search_accent_focusout, search_accent_hover, search_accent_hoverout, initSmoothScroll, initScrollEffects, display_top_button, return_top};
+let [path_icon_moon, path_icon_sun, path_icon_bars, path_icon_xmark] = ["../assets/Icons/moon-solid.svg","../assets/Icons/sun-solid.svg", "../assets/Icons/bars-solid.svg", "../assets/Icons/xmark-solid.svg"]
 
+if (document.title !== "Dios, Teología y Teísmo | Principal"){
+    [path_icon_moon, path_icon_sun, path_icon_bars, path_icon_xmark] = ["../../assets/Icons/moon-solid.svg","../../assets/Icons/sun-solid.svg", "../../assets/Icons/bars-solid.svg", "../../assets/Icons/xmark-solid.svg"]
+
+}
 function initializeTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', savedTheme);
@@ -7,7 +12,7 @@ function initializeTheme() {
 function initializeIcon(mode_icon){
     const current_theme = document.documentElement.getAttribute('data-theme');
     if (current_theme === "dark") {
-        mode_icon.setAttribute('src', '../assets/Icons/sun-solid.svg');
+        mode_icon.setAttribute('src', path_icon_sun);
         mode_icon.setAttribute('alt', 'Icono en forma de sol')
     }
 }
@@ -15,7 +20,7 @@ function display_menu(menu_button, menu_icon, mobile_hamburger_menu, transparent
     if (mobile_hamburger_menu.classList.contains("active")){
         mobile_hamburger_menu.classList.remove("active");
         mobile_hamburger_menu.classList.remove("visible");
-        menu_icon.setAttribute('src', '../assets/Icons/bars-solid.svg');
+        menu_icon.setAttribute('src', path_icon_bars);
         menu_button.setAttribute('aria-expanded', 'false');
         transparent_block.classList.remove("visible");
         search_box_hamburger.classList.remove("visible");
@@ -25,7 +30,7 @@ function display_menu(menu_button, menu_icon, mobile_hamburger_menu, transparent
     } else {
         mobile_hamburger_menu.classList.add("active");
         mobile_hamburger_menu.classList.add("visible");
-        menu_icon.setAttribute('src', '../assets/Icons/xmark-solid.svg');
+        menu_icon.setAttribute('src', path_icon_xmark);
         menu_button.setAttribute('aria-expanded', 'true');
         transparent_block.classList.add("visible");
         search_box_hamburger.classList.add("visible");
@@ -40,11 +45,11 @@ function change_theme(mode_icon){
     let new_theme = "dark";
     if (current_theme === "light") {
         new_theme = "dark";
-        mode_icon.setAttribute('src', '../assets/Icons/sun-solid.svg');
+        mode_icon.setAttribute('src', path_icon_sun);
         mode_icon.setAttribute('alt', 'Icono en forma de sol')
     } else {
         new_theme = "light";
-        mode_icon.setAttribute('src', '../assets/Icons/moon-solid.svg');
+        mode_icon.setAttribute('src', path_icon_moon);
         mode_icon.setAttribute('alt', 'Icono en forma de luna')
     }
     document.documentElement.setAttribute('data-theme', new_theme);

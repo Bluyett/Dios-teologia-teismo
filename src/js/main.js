@@ -28,19 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const desktop_hamburger_menu_2 = document.querySelector(".desktop-hamburger-menu-2")
     const search_box = document.querySelector(".search-box");
     const header = document.querySelector("header");
-    const section_1 = document.querySelector(".section-1");
-    const section_2 = document.querySelector(".section-2");
-    const section_3 = document.querySelector(".section-3");
+    const sections = document.querySelectorAll(".section");
+    const images = document.querySelectorAll(".image-container");
+    const texts = document.querySelectorAll(".paragraph");
+    const titles = document.querySelectorAll(".content-title");
     const message = document.querySelector(".message");
     const autor = document.querySelector(".autor");
-    const title_1 = document.querySelector(".title-1");
-    const title_2 = document.querySelector(".title-2");
-    const image_1 = document.querySelector(".image-1");
-    const image_2 = document.querySelector(".image-2");
-    const text_1 = document.querySelector(".text-1");
-    const text_2 = document.querySelector(".text-2");
-    const text_3 = document.querySelector(".text-3");
-
+    
     // Assets
     const background_image = document.querySelector(".image-content");
     const menu_icon = document.querySelector(".menu-icon");
@@ -48,8 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ** ARRAYS DE ELEMENTOS
 
-    const lenis_smooth_items = [header, mobile_hamburger_menu, message, autor, section_1, section_2, section_3, title_1, title_2, image_1, image_2, text_1, text_2, text_3];
-
+    const lenis_smooth_items = [header, mobile_hamburger_menu, message, autor, ...sections, ...titles, ...images, ...texts];
     
     // ** LLAMADAS A EVENTOS **
     initScrollEffects(lenis_smooth_items);
