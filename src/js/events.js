@@ -70,6 +70,7 @@ function header_scroll(header){
         header.classList.remove("scrolled");
     }
 }
+
 function initSmoothScroll() {
     const lenis = new window.Lenis({
         duration: 1.2,
