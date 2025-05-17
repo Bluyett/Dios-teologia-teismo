@@ -1,7 +1,0 @@
-.little-message{font-size: 2.5em;}
-.medium-message{font-size: 2em;}
-
-@media (min-width: 640px) {
-  .little-message{font-size: 3em;}
-  .medium-message{font-size: 2.5em;}
-}

@@ -1,7 +1,7 @@
 /* DECORATIONS */
 /* Focus */
 [tabindex="0"]:focus{
-  outline: 2px solid var(--white-color-transparent);
+  outline: 2px solid var(--accent-color-transparent);
   outline-offset: 1px;
   border-radius: 5px;
   box-shadow: 4px 4px solid var(--secondary-color);
@@ -21,14 +21,14 @@
   transition: transform 0.5s ease;
 }
 .image-content:hover{transform: scale(1.03);}
-.nav-item-desktop:hover{color: var(--constant-accent-color);}
+.nav-item-desktop:hover{color: var(--hover-accent-color); transition: none;}
 /* Rise Animations */
-header, .mobile-hamburger-menu, .message, .autor, .section, .content-title, .image-container, .paragraph, .top-button-container{
+.mobile-hamburger-menu, .message, .autor, .section, .content-title, .image-container, .paragraph, .top-button-container{
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
 }
-header.visible, .mobile-hamburger-menu.visible, .message.visible, .autor.visible, .section.visible, .content-title.visible, .image-container.visible, .paragraph.visible, .top-button-container.visible{
+.mobile-hamburger-menu.visible, .message.visible, .autor.visible, .section.visible, .content-title.visible, .image-container.visible, .paragraph.visible, .top-button-container.visible{
   opacity: 1;
   transform: translateY(0);
 }

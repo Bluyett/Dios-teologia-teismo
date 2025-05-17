@@ -1,5 +1,7 @@
 /* Header */
 header{
+  opacity: 0;
+  transform: translateY(20px);
   top: var(--size-small);
   left: 2%;
   right: 2%;
@@ -12,14 +14,17 @@ header{
   background-color: transparent;
   box-shadow: none;
   border-radius: 0px;
-  transition-property: background-color, box-shadow, border-radius;
-  transition-duration: 0.5s;
+  transition-property: background-color, box-shadow, border-radius, color, opacity, transform;
+  transition-duration: 1s;
   transition-timing-function: ease;
-  transition-delay: 1s;
 }
 header.scrolled{
   box-shadow: 5px 5px var(--black-color-transparent);
   border-radius: 6px;
+}
+header.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 .grid-header{
   top: 0;
@@ -53,7 +58,9 @@ header.scrolled{
 	display: flex;
   justify-content: center;
 }
-
+@media (max-height: 630px){
+  header{height: 11vh;}
+}
 @media (min-width: 640px) {
   header{
     top: var(--size-xx-small);
@@ -70,13 +77,17 @@ header.scrolled{
     justify-content: center;
   }
   .search-box{
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--constant-text-color-transparent);
     border-radius: 4px;
     width: 90%;
     height: 3.5vh;
     display: flex;
     flex-direction: row;
+    transition-property: border;
+    transition-duration: 1s;
+    transition-timing-function: ease;
   }
+  .search-box.scrolled{border: 1px solid var(--accent-color-transparent);}
   .magnifyng-glass-button{
     width: 20%;
     height: 100%;
@@ -92,7 +103,6 @@ header.scrolled{
     height: 100%;
     background: none;
     box-sizing: border-box;
-    color: var(--constant-text-color);
     font-size: var(--size-medium);
     border: 0;
   }
@@ -101,6 +111,7 @@ header.scrolled{
       top: var(--size-x-small);
       height: 15vh;
 		}
+    .search-box{height: 8vh;}
 	}
 }
 
@@ -121,6 +132,7 @@ header.scrolled{
     align-items: first baseline;
     align-content: flex-start;
   }
+  .nav-item-desktop{color: var(--text-color);}
   .arrow-icon{width: var(--size-small);}
   .search-box{height: 4vh;}
   .icon-magnifyng{width: var(--size-small);}

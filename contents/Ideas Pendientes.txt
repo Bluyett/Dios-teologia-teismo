@@ -1,6 +1,4 @@
-- Agregar mas queries para mejor transición de estilado
 - No olvides el focus para tablets y ordenadores
-- Ver como reiniciar animaciones al cambiar de tema
 - Añadir funcionalidad de búsqueda
 - Usar react para el preloader
 

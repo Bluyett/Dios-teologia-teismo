@@ -44,7 +44,7 @@
   margin-bottom: var(--size-xx-large);
 }
 .search-box-hamburger.visible{
-  border: 1px solid var(--constant-text-color);
+  border: 1px solid var(--constant-text-color-transparent);
   border-radius: 4px;
   width: 70%;
   height: 5vh;
@@ -72,6 +72,7 @@
   font-size: var(--size-large);
   border: 0;
 }
+footer.menu-hamburger-displayed{color: var(--constant-text-color);}
 
 @media (min-width: 640px) {
   .search-box-hamburger{width: 60%;}
@@ -95,8 +96,9 @@
       width: 40vw;
     }
     .hamburger-head{
+      max-height: var(--size-xx-large);
       font-size: var(--size-x-large);
-      margin-bottom: var(--size-large);
+      margin-bottom: var(--size-x-large);
     }
     .hamburger-nav{font-size: var(--size-medium);}
     footer.menu-hamburger-displayed{

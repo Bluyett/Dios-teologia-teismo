@@ -8,6 +8,8 @@ footer{
   padding-bottom: var(--size-large);
   margin-bottom: 0;
   z-index: 3;
+  border: 0;
+  border-bottom: 0px;
 }
 footer.menu-hamburger-displayed{
   position: absolute;

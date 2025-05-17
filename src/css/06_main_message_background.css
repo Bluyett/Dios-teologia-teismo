@@ -33,11 +33,11 @@
 .messages{
   font-family:var(--secondary-font);
   font-weight:var(--font-weight-bold);
+  color: var(--constant-text-color);
 }
-.message{
-  margin-bottom: var(--size-x-small);
-  font-size: var(--size-x-large);
-}
+.message{margin-bottom: var(--size-x-small);}
+.little-message{font-size: var(--little-message-size);}
+.medium-message{font-size: var(--medium-message-size);}
 .autor{font-size: var(--size-large);}
 
 @media (min-width: 640px) {
