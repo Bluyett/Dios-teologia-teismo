@@ -1,0 +1,6 @@
+- No olvides el focus para tablets y ordenadores
+- Añadir funcionalidad de búsqueda
+- Usar react para el preloader
+
+- Investigar bien como añadir este módulo:
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
